@@ -3,6 +3,7 @@
     "@scalar/express-api-reference": "^0.8.32",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
     "express": "^5.2.1",
@@ -15,8 +16,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dbpush": "npx drizzle-kit push --config ./drizzle.config.ts"
+    "db:push": "npx drizzle-kit push --config ./drizzle.config.js",
+    "db:seed": "node db/seed.js"
   },
   "keywords": [],
   "author": "",

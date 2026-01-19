@@ -1,5 +1,5 @@
-import { db } from '../db/index.ts';
-import { users, orders, reviews } from '../db/schema.ts';
+import { db } from '../db/index.js';
+import { users, orders, reviews } from '../db/schema.js';
 import { eq } from 'drizzle-orm';
 
 // GET all users
