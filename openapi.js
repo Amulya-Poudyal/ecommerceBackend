@@ -34,9 +34,9 @@ export const openApiSpec = {
                                 properties: {
                                     email: { type: 'string', format: 'email' },
                                     password: { type: 'string' },
-                                    fullName: { type: 'string' },
+                                    username: { type: 'string' },
                                 },
-                                required: ['email', 'password', 'fullName'],
+                                required: ['email', 'password', 'username'],
                             },
                         },
                     },
@@ -93,7 +93,7 @@ export const openApiSpec = {
                             schema: {
                                 type: 'object',
                                 properties: {
-                                    fullName: { type: 'string' },
+                                    username: { type: 'string' },
                                     phone: { type: 'string' },
                                     address: { type: 'string' },
                                 },
