@@ -1,0 +1,12 @@
+.username { font-weight: 600; }
+.email { color: var(--color-text-muted); font-size: 0.875rem; }
+.toggleBtn {
+  padding: 5px 12px; border-radius: var(--radius-sm);
+  font-size: 0.8125rem; font-weight: 600;
+  transition: all var(--transition-fast);
+}
+.toggleBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+.promote { background: var(--badge-info); color: var(--badge-info-text); }
+.promote:hover:not(:disabled) { opacity: 0.8; }
+.demote { background: var(--badge-error); color: var(--badge-error-text); }
+.demote:hover:not(:disabled) { opacity: 0.8; }

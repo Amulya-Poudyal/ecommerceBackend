@@ -1,0 +1,28 @@
+.page { padding-block: var(--space-10); }
+.title { font-size: 1.75rem; font-weight: 700; margin-bottom: var(--space-8); }
+.layout { display: grid; grid-template-columns: 280px 1fr; gap: var(--space-6); align-items: start; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+.avatarCard {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl); padding: var(--space-8);
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-3); text-align: center;
+}
+.avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--color-primary-muted); border: 2px solid var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary);
+}
+.userName { font-weight: 700; font-size: 1.125rem; }
+.userEmail { font-size: 0.875rem; color: var(--color-text-muted); }
+.adminBadge {
+  padding: 3px 12px; border-radius: var(--radius-full);
+  background: var(--color-primary-muted); color: var(--color-primary);
+  font-size: 0.75rem; font-weight: 700; border: 1px solid rgba(232,160,69,0.3);
+}
+.formCard {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl); padding: var(--space-6);
+  display: flex; flex-direction: column; gap: var(--space-5);
+}
+.formTitle { font-size: 1rem; font-weight: 700; }

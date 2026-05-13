@@ -1,0 +1,50 @@
+.topBar { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-2); }
+.productName { font-weight: 600; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.imageRow { display: flex; flex-direction: column; gap: 4px; }
+.addImageForm { display: flex; gap: 4px; }
+.imageInput {
+  flex: 1; min-width: 0; height: 28px; padding: 0 8px;
+  background: var(--color-surface-raised); border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm); color: var(--color-text); font-size: 0.75rem; outline: none;
+}
+.addImageBtn {
+  width: 28px; height: 28px; border-radius: var(--radius-sm);
+  background: var(--color-primary-muted); color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  transition: background var(--transition-fast);
+}
+.addImageBtn:hover { background: var(--color-primary); color: #1a1208; }
+.actions { display: flex; gap: var(--space-2); }
+.editBtn {
+  width: 30px; height: 30px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--badge-info); color: var(--badge-info-text);
+  transition: opacity var(--transition-fast);
+}
+.editBtn:hover { opacity: 0.8; }
+.deleteBtn {
+  width: 30px; height: 30px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--badge-error); color: var(--badge-error-text);
+  transition: opacity var(--transition-fast);
+}
+.deleteBtn:hover { opacity: 0.8; }
+.form { display: flex; flex-direction: column; gap: var(--space-4); }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+@media (max-width: 560px) { .formGrid { grid-template-columns: 1fr; } }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: 0.875rem; font-weight: 500; }
+.select {
+  height: 42px; padding: 0 12px;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); color: var(--color-text); font-size: 0.9375rem; outline: none;
+  transition: border-color var(--transition-fast);
+}
+.select:focus { border-color: var(--color-primary); }
+.textarea {
+  padding: 10px 14px; resize: vertical;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); color: var(--color-text); font-size: 0.9375rem;
+  font-family: var(--font-sans); outline: none; transition: border-color var(--transition-fast);
+}
+.textarea:focus { border-color: var(--color-primary); }

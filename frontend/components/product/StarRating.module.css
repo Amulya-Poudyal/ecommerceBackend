@@ -1,0 +1,4 @@
+.stars { display: flex; align-items: center; gap: 2px; }
+.filled { color: var(--color-primary); }
+.empty  { color: var(--color-text-subtle); }
+.value  { margin-left: 6px; font-size: 0.875rem; font-weight: 600; color: var(--color-text-muted); }

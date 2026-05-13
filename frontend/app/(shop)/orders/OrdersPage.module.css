@@ -1,0 +1,17 @@
+.page { padding-block: var(--space-10); }
+.title { font-size: 1.75rem; font-weight: 700; margin-bottom: var(--space-6); }
+.list { display: flex; flex-direction: column; gap: var(--space-3); }
+.orderCard {
+  display: flex; align-items: center; gap: var(--space-4);
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-5);
+  transition: all var(--transition-base);
+}
+.orderCard:hover { border-color: var(--color-border-hover); box-shadow: var(--shadow-sm); }
+.orderLeft { flex: 1; }
+.orderId { font-weight: 700; font-size: 0.9375rem; }
+.orderDate { font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 3px; }
+.orderMiddle { display: flex; gap: var(--space-2); }
+.orderRight { display: flex; align-items: center; gap: var(--space-3); margin-left: auto; }
+.orderTotal { font-weight: 700; font-size: 1rem; }
+.arrow { color: var(--color-text-muted); }

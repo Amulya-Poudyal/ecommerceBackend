@@ -1,0 +1,27 @@
+.page { padding-block: var(--space-10); }
+.grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12);
+  align-items: start;
+}
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; gap: var(--space-8); } }
+.galleryCol { position: sticky; top: calc(var(--header-h) + var(--space-6)); }
+@media (max-width: 768px) { .galleryCol { position: static; } }
+.badges { display: flex; gap: var(--space-2); margin-bottom: var(--space-3); }
+.name { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin-bottom: var(--space-3); }
+.rating { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+.ratingCount { font-size: 0.875rem; color: var(--color-text-muted); }
+.pricing { display: flex; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-5); }
+.price { font-size: 1.75rem; font-weight: 800; color: var(--color-text); }
+.originalPrice { font-size: 1.1rem; color: var(--color-text-muted); text-decoration: line-through; }
+.description { font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-6); }
+.meta { font-size: 0.875rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 4px; padding-top: var(--space-4); border-top: 1px solid var(--color-border); }
+.meta span { font-weight: 600; color: var(--color-text); }
+/* Reviews */
+.reviews { margin-top: var(--space-16); padding-top: var(--space-10); border-top: 1px solid var(--color-border); }
+.reviewsTitle { font-size: 1.25rem; font-weight: 700; margin-bottom: var(--space-6); }
+.noReviews { color: var(--color-text-muted); font-size: 0.9375rem; }
+.reviewList { display: flex; flex-direction: column; gap: var(--space-4); }
+.reviewCard { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5); }
+.reviewHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-3); }
+.reviewDate { font-size: 0.75rem; color: var(--color-text-muted); }
+.reviewComment { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }

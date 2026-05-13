@@ -1,0 +1,10 @@
+.count { font-size: 0.875rem; color: var(--color-text-muted); }
+.statusSelect {
+  background: var(--color-surface-raised); border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm); padding: 4px 8px;
+  color: var(--color-text); font-size: 0.8125rem; outline: none; cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+.statusSelect:hover { border-color: var(--color-border-hover); }
+.statusSelect:focus { border-color: var(--color-primary); }
+.statusSelect:disabled { opacity: 0.5; cursor: not-allowed; }
